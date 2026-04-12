@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: upadesh-ai-backend
+    runtime: node
+    region: singapore
+    plan: free
+    buildCommand: npm install
+    startCommand: npm run server
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3001
+      - key: GEMINI_API_KEY
+        value: AIzaSyBX0m-yYn8rz-6mVL_55rIuhcY0VbAeWs4
+      - key: PINECONE_API_KEY
+        sync: false
+      - key: PINECONE_INDEX_NAME
+        value: upadeshaI
+      - key: MONGODB_URI
+        value: mongodb+srv://ashishjadhav7719_db_user:QPqesiMcY8mK4IOU@updeshai.yubfndc.mongodb.net/?appName=updeshai
+      - key: JWT_SECRET
+        value: upadesh-ai-super-secret-jwt-key-2026-production
+    healthCheckPath: /
