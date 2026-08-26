@@ -14,12 +14,29 @@ const messageSchema = new mongoose.Schema({
     id: Number,
     chapter: Number,
     verse: Number,
+    reference: String,
     sanskrit: String,
     transliteration: String,
     translation: String,
     meaning: String,
-    explanation: String
+    explanation: String,
+    verseNumber: Number,
   },
+  // Provenance: retrieved verses that informed this answer
+  sources: [
+    {
+      id: Number,
+      reference: String,
+      chapter: Number,
+      verse: Number,
+      verseNumber: Number,
+      translation: String,
+      score: Number,
+      role: String,
+    },
+  ],
+  messageId: { type: String },
+  feedback: { type: Number, enum: [1, -1, null], default: null },
   timestamp: {
     type: Date,
     default: Date.now

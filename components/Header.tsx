@@ -1,20 +1,20 @@
 'use client'
 
-import { Sparkles } from 'lucide-react'
-
 export default function Header() {
   return (
-    <header className="border-b border-white/10 bg-black/20 backdrop-blur-lg">
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-orange-500 to-pink-500">
-              <Sparkles className="h-6 w-6 text-white" />
-            </div>
-            <div>
-              <h1 className="text-xl font-bold gradient-text">Upadesh AI</h1>
-              <p className="text-xs text-gray-400">Spiritual Guidance from Bhagavad Gita</p>
-            </div>
+    <header className="sticky top-0 z-20 border-b border-line bg-canvas/90 backdrop-blur-md">
+      <div className="mx-auto flex h-14 max-w-3xl items-center justify-between px-4 sm:px-6">
+        <div className="flex items-center gap-2.5">
+          <div className="flex h-8 w-8 items-center justify-center rounded-md bg-moss text-paper">
+            <span className="font-serif text-sm font-semibold leading-none">उ</span>
+          </div>
+          <div>
+            <p className="font-serif text-[15px] font-semibold tracking-tight text-ink">
+              Upadesh AI
+            </p>
+            <p className="text-[11px] leading-none text-ink-faint">
+              Guidance from the Bhagavad Gita
+            </p>
           </div>
         </div>
       </div>

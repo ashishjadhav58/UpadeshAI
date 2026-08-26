@@ -1,12 +1,23 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Source_Serif_4, DM_Sans } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const serif = Source_Serif_4({
+  subsets: ['latin'],
+  variable: '--font-serif',
+  display: 'swap',
+})
+
+const sans = DM_Sans({
+  subsets: ['latin'],
+  variable: '--font-sans',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
-  title: 'Dharma AI - Spiritual Guidance from Bhagavad Gita',
-  description: 'Find wisdom and practical guidance for life situations through the timeless teachings of the Bhagavad Gita',
+  title: 'Upadesh AI — Guidance from the Bhagavad Gita',
+  description:
+    'Thoughtful spiritual guidance grounded in Bhagavad Gita verses, with clear sources.',
 }
 
 export default function RootLayout({
@@ -15,8 +26,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="dark">
-      <body className={inter.className}>{children}</body>
+    <html lang="en">
+      <body className={`${sans.variable} ${serif.variable} font-sans antialiased`}>
+        {children}
+      </body>
     </html>
   )
 }

@@ -1,0 +1,265 @@
+{
+  "ranAt": "2026-08-26T18:03:13.773Z",
+  "mode": "rewrite",
+  "topK": 5,
+  "hitRate": 88.88888888888889,
+  "hits": 16,
+  "total": 18,
+  "rows": [
+    {
+      "id": "duty-fruits",
+      "hit": true,
+      "matched": [
+        "Bhagavad Gita 2.47"
+      ],
+      "topRefs": [
+        "Bhagavad Gita 2.47",
+        "Bhagavad Gita 3.19",
+        "Bhagavad Gita 12.10",
+        "Bhagavad Gita 5.12",
+        "Bhagavad Gita 2.48"
+      ]
+    },
+    {
+      "id": "presentation-anxiety",
+      "hit": true,
+      "matched": [
+        "Bhagavad Gita 1.28",
+        "Bhagavad Gita 1.29",
+        "Bhagavad Gita 1.30"
+      ],
+      "topRefs": [
+        "Bhagavad Gita 1.29",
+        "Bhagavad Gita 16.1",
+        "Bhagavad Gita 1.28",
+        "Bhagavad Gita 1.30",
+        "Bhagavad Gita 12.15"
+      ]
+    },
+    {
+      "id": "stand-up-courage",
+      "hit": true,
+      "matched": [
+        "Bhagavad Gita 2.3",
+        "Bhagavad Gita 2.2"
+      ],
+      "topRefs": [
+        "Bhagavad Gita 1.28",
+        "Bhagavad Gita 2.2",
+        "Bhagavad Gita 1.29",
+        "Bhagavad Gita 18.8",
+        "Bhagavad Gita 2.3"
+      ]
+    },
+    {
+      "id": "grief-death",
+      "hit": true,
+      "matched": [
+        "Bhagavad Gita 2.27"
+      ],
+      "topRefs": [
+        "Bhagavad Gita 2.25",
+        "Bhagavad Gita 2.27",
+        "Bhagavad Gita 2.11",
+        "Bhagavad Gita 2.30",
+        "Bhagavad Gita 8.5"
+      ]
+    },
+    {
+      "id": "anger-control",
+      "hit": true,
+      "matched": [
+        "Bhagavad Gita 2.62",
+        "Bhagavad Gita 2.63",
+        "Bhagavad Gita 16.21"
+      ],
+      "topRefs": [
+        "Bhagavad Gita 2.63",
+        "Bhagavad Gita 2.62",
+        "Bhagavad Gita 16.21",
+        "Bhagavad Gita 16.2",
+        "Bhagavad Gita 3.37"
+      ]
+    },
+    {
+      "id": "equanimity-ups-downs",
+      "hit": true,
+      "matched": [
+        "Bhagavad Gita 2.48"
+      ],
+      "topRefs": [
+        "Bhagavad Gita 13.10",
+        "Bhagavad Gita 2.66",
+        "Bhagavad Gita 6.33",
+        "Bhagavad Gita 17.16",
+        "Bhagavad Gita 2.48"
+      ]
+    },
+    {
+      "id": "feeling-lost",
+      "hit": true,
+      "matched": [
+        "Bhagavad Gita 2.7"
+      ],
+      "topRefs": [
+        "Bhagavad Gita 9.3",
+        "Bhagavad Gita 3.2",
+        "Bhagavad Gita 6.38",
+        "Bhagavad Gita 4.7",
+        "Bhagavad Gita 2.7"
+      ]
+    },
+    {
+      "id": "sorrow-depression",
+      "hit": true,
+      "matched": [
+        "Bhagavad Gita 2.11"
+      ],
+      "topRefs": [
+        "Bhagavad Gita 2.8",
+        "Bhagavad Gita 2.25",
+        "Bhagavad Gita 6.23",
+        "Bhagavad Gita 13.9",
+        "Bhagavad Gita 2.11"
+      ]
+    },
+    {
+      "id": "mind-restless",
+      "hit": true,
+      "matched": [
+        "Bhagavad Gita 6.26",
+        "Bhagavad Gita 6.35"
+      ],
+      "topRefs": [
+        "Bhagavad Gita 6.26",
+        "Bhagavad Gita 6.34",
+        "Bhagavad Gita 12.9",
+        "Bhagavad Gita 2.66",
+        "Bhagavad Gita 6.35"
+      ]
+    },
+    {
+      "id": "desire-craving",
+      "hit": true,
+      "matched": [
+        "Bhagavad Gita 2.62"
+      ],
+      "topRefs": [
+        "Bhagavad Gita 2.62",
+        "Bhagavad Gita 2.71",
+        "Bhagavad Gita 16.11",
+        "Bhagavad Gita 16.12",
+        "Bhagavad Gita 2.8"
+      ]
+    },
+    {
+      "id": "career-duty",
+      "hit": true,
+      "matched": [
+        "Bhagavad Gita 2.47"
+      ],
+      "topRefs": [
+        "Bhagavad Gita 18.48",
+        "Bhagavad Gita 18.10",
+        "Bhagavad Gita 12.10",
+        "Bhagavad Gita 16.24",
+        "Bhagavad Gita 2.47"
+      ]
+    },
+    {
+      "id": "inner-peace",
+      "hit": true,
+      "matched": [
+        "Bhagavad Gita 2.71"
+      ],
+      "topRefs": [
+        "Bhagavad Gita 2.66",
+        "Bhagavad Gita 13.10",
+        "Bhagavad Gita 2.71",
+        "Bhagavad Gita 2.56",
+        "Bhagavad Gita 16.2"
+      ]
+    },
+    {
+      "id": "fear",
+      "hit": true,
+      "matched": [
+        "Bhagavad Gita 2.40"
+      ],
+      "topRefs": [
+        "Bhagavad Gita 2.40",
+        "Bhagavad Gita 13.10",
+        "Bhagavad Gita 12.15",
+        "Bhagavad Gita 16.1",
+        "Bhagavad Gita 11.24"
+      ]
+    },
+    {
+      "id": "attachment",
+      "hit": false,
+      "matched": [],
+      "topRefs": [
+        "Bhagavad Gita 13.10",
+        "Bhagavad Gita 12.18",
+        "Bhagavad Gita 18.6",
+        "Bhagavad Gita 18.10",
+        "Bhagavad Gita 12.16"
+      ]
+    },
+    {
+      "id": "compassion",
+      "hit": true,
+      "matched": [
+        "Bhagavad Gita 12.13",
+        "Bhagavad Gita 16.2"
+      ],
+      "topRefs": [
+        "Bhagavad Gita 16.2",
+        "Bhagavad Gita 12.13",
+        "Bhagavad Gita 2.7",
+        "Bhagavad Gita 12.18",
+        "Bhagavad Gita 1.34"
+      ]
+    },
+    {
+      "id": "failure-effort",
+      "hit": false,
+      "matched": [],
+      "topRefs": [
+        "Bhagavad Gita 18.8",
+        "Bhagavad Gita 2.48",
+        "Bhagavad Gita 18.26",
+        "Bhagavad Gita 6.33",
+        "Bhagavad Gita 13.10"
+      ]
+    },
+    {
+      "id": "family-duty",
+      "hit": true,
+      "matched": [
+        "Bhagavad Gita 2.7"
+      ],
+      "topRefs": [
+        "Bhagavad Gita 2.7",
+        "Bhagavad Gita 3.2",
+        "Bhagavad Gita 18.60",
+        "Bhagavad Gita 18.47",
+        "Bhagavad Gita 2.4"
+      ]
+    },
+    {
+      "id": "self-discipline",
+      "hit": true,
+      "matched": [
+        "Bhagavad Gita 6.5"
+      ],
+      "topRefs": [
+        "Bhagavad Gita 6.5",
+        "Bhagavad Gita 2.66",
+        "Bhagavad Gita 13.8",
+        "Bhagavad Gita 18.28",
+        "Bhagavad Gita 6.26"
+      ]
+    }
+  ]
+}

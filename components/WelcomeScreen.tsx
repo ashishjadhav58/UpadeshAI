@@ -1,100 +1,54 @@
 'use client'
 
-import { Sparkles, Heart, BookOpen, Compass } from 'lucide-react'
-
 interface WelcomeScreenProps {
-  onStart: () => void
+  onStart: (prompt?: string) => void
 }
 
 export default function WelcomeScreen({ onStart }: WelcomeScreenProps) {
-  const features = [
-    {
-      icon: Heart,
-      title: 'Compassionate Guidance',
-      description: 'Receive empathetic support for your life challenges',
-    },
-    {
-      icon: BookOpen,
-      title: 'Ancient Wisdom',
-      description: 'Access timeless teachings from the Bhagavad Gita',
-    },
-    {
-      icon: Compass,
-      title: 'Practical Advice',
-      description: 'Get actionable insights for modern life situations',
-    },
-  ]
-
   const examples = [
     'I feel lost in my career path',
     'How do I deal with failure?',
-    'I struggle with anxiety and stress',
-    'How can I find inner peace?',
+    'I struggle with anxiety before presentations',
+    'I am confused about what decision to make',
   ]
 
   return (
-    <div className="container mx-auto px-4 py-12">
-      <div className="mx-auto max-w-4xl">
-        <div className="text-center mb-12 animate-fade-in">
-          <div className="mb-6 flex justify-center">
-            <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-orange-500 to-pink-500 shadow-2xl shadow-orange-500/50">
-              <Sparkles className="h-10 w-10 text-white" />
-            </div>
-          </div>
-          <h1 className="mb-4 text-5xl font-bold gradient-text">
-            Welcome to Dharma AI
-          </h1>
-          <p className="text-xl text-gray-300 mb-2">
-            Your spiritual companion for life's journey
-          </p>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            Share your thoughts, challenges, or questions, and receive wisdom from the Bhagavad Gita
-            tailored to your situation
-          </p>
-        </div>
+    <div className="mx-auto flex min-h-[calc(100vh-56px)] max-w-2xl flex-col justify-center px-4 py-16 sm:px-6">
+      <div className="animate-fade-in">
+        <p className="mb-3 text-xs font-medium uppercase tracking-[0.14em] text-ink-faint">
+          Spiritual guidance
+        </p>
+        <h1 className="font-serif text-4xl font-semibold tracking-tight text-ink sm:text-5xl">
+          Upadesh AI
+        </h1>
+        <p className="mt-4 max-w-lg text-[17px] leading-relaxed text-ink-muted">
+          Share what you are facing. Receive grounded guidance from the Bhagavad Gita,
+          with clear verse sources—not generic advice.
+        </p>
 
-        <div className="grid md:grid-cols-3 gap-6 mb-12 animate-slide-up">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="rounded-2xl bg-white/5 p-6 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300"
-            >
-              <feature.icon className="h-8 w-8 text-orange-500 mb-4" />
-              <h3 className="text-lg font-semibold text-white mb-2">
-                {feature.title}
-              </h3>
-              <p className="text-gray-400 text-sm">{feature.description}</p>
-            </div>
-          ))}
-        </div>
-
-        <div className="mb-12">
-          <h2 className="text-2xl font-semibold text-white mb-6 text-center">
-            Try asking about...
-          </h2>
-          <div className="grid md:grid-cols-2 gap-4">
-            {examples.map((example, index) => (
+        <div className="mt-10">
+          <p className="mb-3 text-sm font-medium text-ink">Try a prompt</p>
+          <div className="grid gap-2 sm:grid-cols-2">
+            {examples.map((example) => (
               <button
-                key={index}
-                onClick={onStart}
-                className="rounded-xl bg-white/5 p-4 text-left backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-orange-500/50 transition-all duration-300 group"
+                key={example}
+                type="button"
+                onClick={() => onStart(example)}
+                className="rounded-lg border border-line bg-paper px-4 py-3 text-left text-sm text-ink-muted transition hover:border-moss/30 hover:bg-moss-soft/40 hover:text-ink"
               >
-                <p className="text-gray-300 group-hover:text-white transition-colors">
-                  "{example}"
-                </p>
+                {example}
               </button>
             ))}
           </div>
         </div>
 
-        <div className="text-center">
-          <button
-            onClick={onStart}
-            className="rounded-full bg-gradient-to-r from-orange-500 to-pink-500 px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-orange-500/50 hover:shadow-xl hover:shadow-orange-500/70 transition-all duration-300 hover:scale-105"
-          >
-            Start Your Journey
-          </button>
-        </div>
+        <button
+          type="button"
+          onClick={() => onStart()}
+          className="mt-8 rounded-lg bg-moss px-5 py-2.5 text-sm font-medium text-paper transition hover:bg-moss-hover"
+        >
+          Start conversation
+        </button>
       </div>
     </div>
   )

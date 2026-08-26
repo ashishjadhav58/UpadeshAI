@@ -1,0 +1,110 @@
+[
+  {
+    "id": "duty-fruits",
+    "query": "I work hard but obsess over whether I will get promoted",
+    "expectedReferences": ["Bhagavad Gita 2.47"],
+    "notes": "Karma yoga — act without attachment to fruits"
+  },
+  {
+    "id": "presentation-anxiety",
+    "query": "I feel anxious and my body shakes before presentations",
+    "expectedReferences": ["Bhagavad Gita 1.28", "Bhagavad Gita 1.29", "Bhagavad Gita 1.30"],
+    "notes": "Arjuna's physical symptoms of fear"
+  },
+  {
+    "id": "stand-up-courage",
+    "query": "I feel weak and want to give up before a hard challenge",
+    "expectedReferences": ["Bhagavad Gita 2.3", "Bhagavad Gita 2.2"],
+    "notes": "Krishna urging Arjuna not to yield to weakness"
+  },
+  {
+    "id": "grief-death",
+    "query": "I am grieving someone who died and cannot move on",
+    "expectedReferences": ["Bhagavad Gita 2.13", "Bhagavad Gita 2.20", "Bhagavad Gita 2.22", "Bhagavad Gita 2.27"],
+    "notes": "Eternal soul / rebirth teachings"
+  },
+  {
+    "id": "anger-control",
+    "query": "I get angry quickly and it ruins my relationships",
+    "expectedReferences": ["Bhagavad Gita 2.62", "Bhagavad Gita 2.63", "Bhagavad Gita 16.21"],
+    "notes": "Desire → anger → delusion chain"
+  },
+  {
+    "id": "equanimity-ups-downs",
+    "query": "How do I stay calm when life keeps swinging between good and bad news",
+    "expectedReferences": ["Bhagavad Gita 2.14", "Bhagavad Gita 2.38", "Bhagavad Gita 2.48"],
+    "notes": "Endure dualities with equanimity"
+  },
+  {
+    "id": "feeling-lost",
+    "query": "I feel lost in life and don't know my purpose",
+    "expectedReferences": ["Bhagavad Gita 2.7", "Bhagavad Gita 3.35", "Bhagavad Gita 18.47"],
+    "notes": "Seeking guidance / own dharma"
+  },
+  {
+    "id": "sorrow-depression",
+    "query": "I feel deep sorrow and nothing seems meaningful anymore",
+    "expectedReferences": ["Bhagavad Gita 2.11", "Bhagavad Gita 2.7", "Bhagavad Gita 18.66"],
+    "notes": "Wisdom that addresses grief of the wise"
+  },
+  {
+    "id": "mind-restless",
+    "query": "My mind will not stay still; meditation feels impossible",
+    "expectedReferences": ["Bhagavad Gita 6.5", "Bhagavad Gita 6.6", "Bhagavad Gita 6.26", "Bhagavad Gita 6.35"],
+    "notes": "Mind as friend/enemy; bring it back"
+  },
+  {
+    "id": "desire-craving",
+    "query": "I am controlled by desire and keep craving things I don't need",
+    "expectedReferences": ["Bhagavad Gita 3.37", "Bhagavad Gita 2.62", "Bhagavad Gita 5.23"],
+    "notes": "Desire as enemy"
+  },
+  {
+    "id": "career-duty",
+    "query": "Should I keep doing my job even when I dislike it",
+    "expectedReferences": ["Bhagavad Gita 3.19", "Bhagavad Gita 3.8", "Bhagavad Gita 18.45", "Bhagavad Gita 2.47"],
+    "notes": "Perform prescribed duty"
+  },
+  {
+    "id": "inner-peace",
+    "query": "How can I find lasting peace of mind",
+    "expectedReferences": ["Bhagavad Gita 2.70", "Bhagavad Gita 2.71", "Bhagavad Gita 5.29", "Bhagavad Gita 6.27"],
+    "notes": "Peace like ocean receiving rivers"
+  },
+  {
+    "id": "fear",
+    "query": "I live in constant fear of what might go wrong",
+    "expectedReferences": ["Bhagavad Gita 4.10", "Bhagavad Gita 18.30", "Bhagavad Gita 2.40"],
+    "notes": "Freedom from fear / clarity of buddhi"
+  },
+  {
+    "id": "attachment",
+    "query": "I cling too tightly to people and outcomes",
+    "expectedReferences": ["Bhagavad Gita 2.62", "Bhagavad Gita 15.5", "Bhagavad Gita 2.71"],
+    "notes": "Attachment and liberation from clinging"
+  },
+  {
+    "id": "compassion",
+    "query": "How should I treat others with kindness without losing myself",
+    "expectedReferences": ["Bhagavad Gita 12.13", "Bhagavad Gita 12.14", "Bhagavad Gita 16.2"],
+    "notes": "Devotee qualities — friendly, compassionate"
+  },
+  {
+    "id": "failure-effort",
+    "query": "I feel like a failure every time I try something new",
+    "expectedReferences": ["Bhagavad Gita 2.47", "Bhagavad Gita 6.5", "Bhagavad Gita 18.48"],
+    "notes": "Focus on action not fruit; lift the self"
+  },
+  {
+    "id": "family-duty",
+    "query": "I am torn between my duty to my parents and my own path",
+    "expectedReferences": ["Bhagavad Gita 1.31", "Bhagavad Gita 2.7", "Bhagavad Gita 3.35"],
+    "notes": "Conflict of duties / seeking counsel"
+  },
+  {
+    "id": "self-discipline",
+    "query": "How do I build self-discipline and stop sabotaging myself",
+    "expectedReferences": ["Bhagavad Gita 6.5", "Bhagavad Gita 6.6", "Bhagavad Gita 3.42"],
+    "notes": "Elevate the self by the self"
+  }
+]

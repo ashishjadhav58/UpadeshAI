@@ -8,6 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "ingest": "node scripts/ingest.js",
+    "eval:retrieval": "node scripts/eval-retrieval.js",
+    "eval:retrieval:rewrite": "node scripts/eval-retrieval.js --rewrite",
+    "eval:retrieval:full": "node scripts/eval-retrieval.js --full",
     "server": "node server/index.js"
   },
   "dependencies": {
@@ -19,6 +22,7 @@
     "dotenv": "^16.4.1",
     "express": "^4.18.2",
     "framer-motion": "^11.0.3",
+    "groq-sdk": "^1.6.0",
     "jsonwebtoken": "^9.0.2",
     "lucide-react": "^0.323.0",
     "mongodb": "^6.3.0",

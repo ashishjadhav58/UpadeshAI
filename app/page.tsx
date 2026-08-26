@@ -17,12 +17,15 @@ export default function Home() {
     }
   }, [])
 
-  const handleStartChat = () => {
+  const handleStartChat = (prompt?: string) => {
     setShowWelcome(false)
+    if (prompt) {
+      sessionStorage.setItem('upadesh-starter', prompt)
+    }
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <main className="min-h-screen bg-canvas text-ink">
       <Header />
       {showWelcome ? (
         <WelcomeScreen onStart={handleStartChat} />

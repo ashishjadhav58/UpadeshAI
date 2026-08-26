@@ -13,6 +13,10 @@ services:
         value: 3001
       - key: GEMINI_API_KEY
         value: AIzaSyBX0m-yYn8rz-6mVL_55rIuhcY0VbAeWs4
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GROQ_MODEL
+        value: allam-2-7b
       - key: PINECONE_API_KEY
         sync: false
       - key: PINECONE_INDEX_NAME
