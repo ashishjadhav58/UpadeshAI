@@ -338,6 +338,40 @@ router.get('/history/:sessionId', optionalAuth, async (req, res) => {
 
 router.get('/sessions', optionalAuth, async (req, res) => {
   try {
+    // Anonymous: pass ?ids=session1,session2 from localStorage
+    const idsParam = req.query.ids;
+    if (idsParam) {
+      const ids = String(idsParam)
+        .split(',')
+        .map((s) => s.trim())
+        .filter(Boolean)
+        .slice(0, 40);
+
+      if (!ids.length) {
+        return res.json([]);
+      }
+
+      const chats = await Chat.find({ sessionId: { $in: ids } })
+        .sort({ updatedAt: -1 })
+        .select('sessionId createdAt updatedAt messages')
+        .limit(40);
+
+      const sessions = chats.map((chat) => {
+        const firstUser = chat.messages.find((m) => m.role === 'user');
+        const last = chat.messages[chat.messages.length - 1];
+        return {
+          sessionId: chat.sessionId,
+          createdAt: chat.createdAt,
+          updatedAt: chat.updatedAt,
+          messageCount: chat.messages.length,
+          title: (firstUser?.content || 'New chat').substring(0, 60),
+          lastMessage: last?.content?.substring(0, 100) || '',
+        };
+      });
+
+      return res.json(sessions);
+    }
+
     if (!req.user) {
       return res.json([]);
     }
@@ -345,15 +379,20 @@ router.get('/sessions', optionalAuth, async (req, res) => {
     const chats = await Chat.find({ userId: req.user._id })
       .sort({ updatedAt: -1 })
       .select('sessionId createdAt updatedAt messages')
-      .limit(20);
+      .limit(40);
 
-    const sessions = chats.map((chat) => ({
-      sessionId: chat.sessionId,
-      createdAt: chat.createdAt,
-      updatedAt: chat.updatedAt,
-      messageCount: chat.messages.length,
-      lastMessage: chat.messages[chat.messages.length - 1]?.content.substring(0, 100),
-    }));
+    const sessions = chats.map((chat) => {
+      const firstUser = chat.messages.find((m) => m.role === 'user');
+      const last = chat.messages[chat.messages.length - 1];
+      return {
+        sessionId: chat.sessionId,
+        createdAt: chat.createdAt,
+        updatedAt: chat.updatedAt,
+        messageCount: chat.messages.length,
+        title: (firstUser?.content || 'New chat').substring(0, 60),
+        lastMessage: last?.content?.substring(0, 100) || '',
+      };
+    });
 
     res.json(sessions);
   } catch (error) {

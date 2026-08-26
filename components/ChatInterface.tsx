@@ -38,6 +38,7 @@ interface Message {
 interface ChatInterfaceProps {
   sessionId: string | null
   setSessionId: (id: string) => void
+  onSessionChange?: (sessionId: string, title?: string) => void
 }
 
 function parseSseBlocks(buffer: string): { events: any[]; rest: string } {
@@ -60,7 +61,11 @@ function parseSseBlocks(buffer: string): { events: any[]; rest: string } {
   return { events, rest }
 }
 
-export default function ChatInterface({ sessionId, setSessionId }: ChatInterfaceProps) {
+export default function ChatInterface({
+  sessionId,
+  setSessionId,
+  onSessionChange,
+}: ChatInterfaceProps) {
   const [messages, setMessages] = useState<Message[]>([])
   const [input, setInput] = useState('')
   const [isLoading, setIsLoading] = useState(false)
@@ -80,7 +85,9 @@ export default function ChatInterface({ sessionId, setSessionId }: ChatInterface
 
   useEffect(() => {
     if (sessionId) {
-      loadChatHistory()
+      void loadChatHistory()
+    } else {
+      setMessages([])
     }
   }, [sessionId])
 
@@ -140,9 +147,10 @@ export default function ChatInterface({ sessionId, setSessionId }: ChatInterface
           if (event.type === 'start') {
             sawStart = true
             const newSessionId = event.sessionId as string
-            if (!sessionId && newSessionId) {
+            if (newSessionId) {
               setSessionId(newSessionId)
               localStorage.setItem('dharma-session-id', newSessionId)
+              onSessionChange?.(newSessionId, userMessage.content)
             }
             setMessages((prev) => {
               const next = [...prev]
